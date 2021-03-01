@@ -37,3 +37,19 @@
 - terminal en carpeta de proyecto/build
   >http-server -o
 - navegador http://localhost:8080/
+# despliegues en Github Pages
+- >git init
+  >git add .
+  >git commit -m "First commit" 
+- renombrar carpeta build por docs
+  >git add .
+  >git commit -m "docs agragado" 
+- en github creo un nuevo repostorio:
+  >git remote add origin https://github.com/MS2020-ms/react-gifexpert-app.git
+  >git branch -M main
+  >git push -u origin main
+
+- en github -> Settings/GitHub Pages 
+  source main: /docs save
+  GitHub Pages -> link -> https://ms2020-ms.github.io/react-gifexpert-app/
+  Si da ERROR, ir build index.html y poner eun punto ante cada href="./
